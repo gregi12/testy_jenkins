@@ -3,7 +3,10 @@ FROM python:3
 ENV PYTHONUNBUFFERED 1
 # Sets the container's working directory to /app
 WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
 # Copies all files from our local project into the container
-ADD . /app
-# runs the pip install command for all packages listed in the requirements.txt file
-RUN pip install -r requirements.txt
+COPY . .
+# Expose the port the app will run on
+EXPOSE 8000
