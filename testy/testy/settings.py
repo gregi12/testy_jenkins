@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'testy',
     'rest_framework',
+    'tesciki',
 ]
 
 MIDDLEWARE = [

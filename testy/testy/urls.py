@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, re_path
-from .views import add_numbers 
+from tesciki.views import add_numbers 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
