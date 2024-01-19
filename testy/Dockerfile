@@ -4,6 +4,6 @@ ENV PYTHONUNBUFFERED 1
 # Sets the container's working directory to /app
 WORKDIR /app
 # Copies all files from our local project into the container
-ADD ./app
+ADD . /app
 # runs the pip install command for all packages listed in the requirements.txt file
 RUN pip install -r requirements.txt
