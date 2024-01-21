@@ -1,3 +1,4 @@
+FROM jenkins
 FROM python:3.8-slim as compiler
 ENV PYTHONUNBUFFERED 1
 
